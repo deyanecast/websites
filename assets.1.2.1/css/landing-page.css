@@ -1,0 +1,252 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.6 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #138496;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+.navbar-item {
+  color: #757575;
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 14px;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-item:hover{
+  color: #565656;
+  text-decoration: none;
+}
+.navbar {
+  background-color: transparent 0.3;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 135vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+header video {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 95%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+header .btn-transparent {
+  padding: 13px 26px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .btn-transparent:hover {
+  color: #F2F2F2;
+  border-color: #F2F2F2;
+  text-decoration: none;
+}
+
+header .btn-transparent:active {
+  color: #F2F2F2;
+  border-color: #F2F2F2;
+  text-decoration: none;
+}
+
+.boton-contact{
+  margin-top: 90vh;
+}
+
+.boton-video{
+  margin-top: 50vh;
+}
+
+#map_canvas {
+  width: 100%;
+  height: 450px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media (max-width: 500px) {
+  header video {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+  }
+  
+  .boton-contact{
+    margin-top: 17vh;
+    z-index: 1000;
+    color: #000;
+  }
+  
+  .boton-video{
+    margin-top: 5vh;
+    z-index: 1000;
+  }
+  
+  .features-icons{
+    position: relative;
+    top: -105vh;
+  }
+  
+  .showcase{
+    position: relative;
+    top: -105vh;
+  }
+  
+  .testimonials{
+    position: relative;
+    top: -40vh;
+  }
+}
+.carousel-item {
+  height: 30.5rem;
+  width: 100%;
+  background-color: #a5adb6;
+
+}
+
+.carousel-caption d-none d-md-block {
+  color: black;
+}
