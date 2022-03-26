@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora</title>
+    <link rel="stylesheet" href="assets.1.2.1/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/...">
+    <script src="https://kit.fontawesome.com/f49ecf94c5.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+    <img src="assets.1.2.1/img/logo.png" alt="" height="85" width="100">
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">
+        &#8801
+    </label>
+    <nav class="menu">
+        <a href="" >Inicio</a>
+        <a href="about.html" >Sobre Nosotros</a>
+        <a href="#contacto" id="a3">Contactanos</a>
+        <label for="check" class="esconder-menu">
+            &#215
+        </label>
+    </nav>
+    </header>
+
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3>
+                <span>FECTUM</span>
+                group <br> Pruebas
+            </h3>
+        <a href="#" class="boton-empezar">Empezar</a>
+        </div>
+    </section>
+    <br><br>
+    <div class="texto-servicios">
+       <h2>Acerca de nuestros Servicios</h2>
+    </div>
+   <section id="personas">
+    
+       <div >
+           <img src="assets.1.2.1/img/inge1.jpg" height="150" width="150" alt="">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipi.</p>
+          
+
+       </div>
+       <div>
+        <img src="assets.1.2.1/img/inge1.jpg" height="150" width="150" alt="">
+         <h4>Lorem ipsum dolor sit amet.</h4>
+         <p>Lorem ipsum dolor sit amet consectetu</p>
+    </div>
+    <div>
+        <img src="assets.1.2.1/img/inge1.jpg" height="150" width="150" alt="">
+         <h4>Lorem ipsum dolor sit amet.</h4>
+         <p>Lorem ipsum dolor sit amet consectetu</p>
+    </div>
+    
+    <!--<a href="#" class="boton-saber-mas">Saber más</a>-->
+
+   </section>
+
+   <section id="iconos">
+    <div class="contenido-iconos">
+        <div>
+            <i class="fa-solid fa-sun fa-3x"></i>
+            <h6>Mision</h6>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-eye fa-3x"></i>
+            <h6>Visi&oacute;n</h6>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div id="icono-movil">
+            <i class="fa-solid fa-medal fa-3x"></i>
+            <h6>V&aacute;lores</h6>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        
+    </div>
+    <div class="boton-iconos">
+        <a href="#" class="boton-saber-mas">Saber mas</a>
+    </div>
+   </section>
+   <section id="contacto">
+       <h4>Contactanos</h4>
+       <form action="">
+           <div class="datos-form">
+               <div class="nombre">
+                   <label for="nombre">Nombre</label>
+                   <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+               </div>
+               <div class="email">
+                <label for="email">Nombre</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+           </div>
+           <div class="mensaje">
+               <label for="mensaje">Mensaje</label>
+               <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+           </div>
+           <div class="boton-formulario">
+                <a href="" class="boton-saber-mas">Enviar Mensaje</a>
+           </div>
+       </form>
+
+   </section>
+   <footer>
+    <section id="iconos">
+        <div class="contenido-iconos">
+            <div>
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+                <br><br>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Meta%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=433804527731204" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <a href="https://www.facebook.com/Meta/" target="_blank"></a>
+            </div>
+            <div>
+                <i class="fab fa-youtube fa-2x fa-fw"></i>
+                <br><br>
+                    <iframe width = "320" height = "500" src = "https://youtube.com/embed/playlist?list=PL2aBZuCeDwlS_2sGfYSvcoJZLRG069i-H" frameborder = "0" allow = "reproducción automática; medios cifrados" allowfullscreen> </iframe>
+                    <a href="https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ" target="_blank"></a>
+            </div>
+            <div id="icono-movil">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                <br><br>
+                    <iframe  class="lead mb-0" width="320" height="500" src="http://instagram.com/p/CMhtwmPjKrd/embed" frameborder="0"></iframe>
+                    <a href="https://www.instagram.com/p/CLmngaxBxMf/" target="_blank"></a>
+            </div>
+        </div>
+       </section>
+        <p>&copy; 2022</p>
+   </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <script>
+     $(document).on('ready', function() {
+    $('#a3').on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop: $('#contacto').offset().top }, 1000);
+    });
+    $('#a2').on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop: $('#personas').offset().top }, 1000);
+    });
+});
+   </script>
+</body>
+
+</html>
