@@ -289,13 +289,50 @@ form textarea::placeholder{
     background: #589D9B ;
 }
 
-footer{
+#iframe {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-iconos {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: space-around;
+    height: 100%;
+    /* overflow-x: scroll; */
+    /* overscroll-behavior-x: contain; */
+    /* scroll-snap-type: x proximity; */
+    padding: 0px;
+}
+.iframe__container {
+    flex: 1;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    scroll-snap-align: center;
+    margin: 10px !important;
+}
+
+/* Footer  */
+.footer{
+    display: flex;
+    flex-direction: column;
     background: #4d4d5c;
     color : #cccccc4a;
-    text-align: center;
-    padding: 10px 10px 10px 0px;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    width: 100%;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-social .social a {
+    display: flex;
+    margin: 25px;
+    height: 40px;
+    width: 40px;
 }
 
 @media(max-width: 768px)
@@ -338,10 +375,13 @@ footer{
     }
     #personas{
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .footer{
-        flex-direction: column;
+    .box {
+        height: 10rem;
+        flex-basis: 10rem;
+        flex-grow: 1;
     }
 
     /*iconos*/
@@ -356,7 +396,5 @@ footer{
     /*formulario*/
     .datos-form{
         flex-direction: column;
-
     }
 }
-
