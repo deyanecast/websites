@@ -420,10 +420,11 @@ form textarea::placeholder{
 }
 @media (max-width:767px)
 {
-  .site-footer
+ /* .site-footer
   {
     padding-bottom:0
-  }
+  }*/
+    
   .site-footer .copyright-text,.site-footer .social-icons
   {
     text-align:center
