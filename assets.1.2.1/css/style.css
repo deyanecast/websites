@@ -293,7 +293,9 @@ footer{
     background: #4d4d5c;
     color : #cccccc4a;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px 10px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 @media(max-width: 768px)
@@ -335,6 +337,10 @@ footer{
         right: 0;
     }
     #personas{
+        flex-direction: column;
+    }
+
+    .footer{
         flex-direction: column;
     }
 
