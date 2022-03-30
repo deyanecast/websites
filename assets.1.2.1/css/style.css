@@ -359,6 +359,7 @@ form textarea::placeholder{
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
+  margin-left:10px;
   letter-spacing:2px
 }
 .site-footer a
@@ -420,14 +421,9 @@ form textarea::placeholder{
 }
 @media (max-width:767px)
 {
- /* .site-footer
-  {
-    padding-bottom:0
-  }*/
-    
   .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
   }
 }
 .social-icons
@@ -435,6 +431,11 @@ form textarea::placeholder{
   padding-left:0;
   margin-bottom:0;
   list-style:none
+}
+
+.marca
+{
+ padding-left: 10px;
 }
 .social-icons li
 {
