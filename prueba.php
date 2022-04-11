@@ -6,7 +6,7 @@ header("Pragma: no-cache");
 header("Cache: no-cahce");
 ini_set('max_execution_time', 90000);
 ini_set("memory_limit", -1);
-require_once('CONFIG/mailchimp/src/Mandrill.php');
+require_once('CONFIG/mandrill/src/Mandrill.php');
 
 $request = $_REQUEST["request"]; 
 switch($request){
@@ -28,6 +28,7 @@ switch($request){
 
 function enviar()
 {
+
     $apikey = '510b81a3686ca86741d227cf5e3c6672-us14'; //aquí debes indicar tu api key de mandrill
 	$mandrill = new Mandrill($apikey);
     $mensaje = "hola";
