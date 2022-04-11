@@ -514,7 +514,7 @@ form textarea::placeholder{
         position: fixed;
         height: 100vh;
         width: 100%;
-        background: #28B0AB;
+        background: #767777;
 
         right: -100%;
         top: 0;
