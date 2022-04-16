@@ -1,5 +1,5 @@
 
-function prueba()
+function Enviar()
 {
     Swal.fire({
         title: 'Desea enviar este mensaje al administrador?',
@@ -10,7 +10,7 @@ function prueba()
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-          Swal.fire('Mensaje enviado correctamente!', '', 'success')
+          EnviarMensaje();
         } else if (result.isDenied) {
           Swal.fire('Mensaje no enviado', '', 'info')
         }
@@ -29,9 +29,10 @@ function EnviarMensaje(){
         var http = new FormData();
         http.append("request","grabar");
         http.append("nombre", nombre.value);
-
+        http.append("mail", email.value);
+        http.append("mensaje", mensaje.value);      
         var request = new XMLHttpRequest();
-        request.open("POST", "prueba.php");
+        request.open("POST", "ajax/ajax_contactanos.php");
         request.send(http);
         request.onreadystatechange = function(){
            //console.log( request );
@@ -39,19 +40,33 @@ function EnviarMensaje(){
            if(request.status === 200){
             resultado = JSON.parse(request.responseText);
                 if(resultado.status !== true){
-                   console.log("nose ha grabado nada");
+                  alert("no se envio");
+                  return;
                 }
                 //console.log( resultado );
-                console.log("enviado");
-                alert("si se envio, revise su bandeja de entrada");
+               // console.log("enviado");
+               
+                Swal.fire({
+                  position: 'top-end',
+                  icon: 'success',
+                  title: resultado.message,
+                  showConfirmButton: false,
+                  timer: 1500
+                });
+                setTimeout("location.href='index.html'", 1600);
             }
         };     
     }else{
-        if(nombre.value === ""){
-            nombre.className = "form-danger";
+        if(email.value == "" || mensaje.value  == "" ){
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Debes completar todos los campos..',
+         
+          });
         }else{
             nombre.className = "form-control";
         }
-       console.log("error");
+
     }
 }
