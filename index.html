@@ -22,7 +22,7 @@
     <label for="check" class="mostrar-menu">
         &#8801
     </label>
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <a href="" >Inicio</a>
         <a href="about.html" >Sobre Nosotros</a>
         <a href="#contacto" id="a3">Contactanos</a>
@@ -36,14 +36,14 @@
         <div class="contenido-banner">
             <h3>
                 <span>FECTUM</span>
-                group <br> Pruebas
+                group <br> Breve descripcion sobre los servicios de la empresa xdxdxd
             </h3>
-        <a href="#" class="boton-empezar">Empezar</a>
+        <a href="#contacto" id="a4" class="boton-empezar">Empezar</a>
         </div>
     </section>
     <br><br>
     <div class="texto-servicios">
-       <h2>Acerca de nuestros Servicios</h2>
+       <h2>Nuestros Servicios</h2>
     </div>
    <div class="principal">
     <div class="containerprin">
@@ -175,12 +175,12 @@
                 
             </div>
             <div class="boton-iconos">
-                <a   class="boton-saber-mas">Regresar al Inicio</a>
+                <a href="#menu" id="regresar" class="boton-saber-mas">Regresar al Inicio</a>
             </div>
            </section>
         <div class="container">
           <div class="row">
-              <h5>FECTUM</h5>
+              <h5>FECTUM GROUP</h5>
               <p class="marca">Siguenos en nuestras redes sociales</p>
             </div>
           </div>
@@ -208,6 +208,14 @@
    <script>
      $(document).on('ready', function() {
     $('#a3').on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop: $('#contacto').offset().top }, 1000);
+    });
+    $('#regresar').on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop: $('#menu').offset().top }, 1000);
+    });
+    $('#a4').on('click', function(e) {
         e.preventDefault();
         $("html, body").animate({scrollTop: $('#contacto').offset().top }, 1000);
     });
