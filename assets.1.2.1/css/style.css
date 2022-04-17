@@ -735,6 +735,21 @@ footer p
       flex-direction: column;
       flex-wrap: wrap;
     }
+
+    #enlaces
+    {
+      display: none;
+    }
+    #sabermasdiv
+    {
+      display: none;
+    }
+
+    #site-footer
+    {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
    .containerprin
    {
     flex-direction: column;
