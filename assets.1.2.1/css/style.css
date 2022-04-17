@@ -4,15 +4,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
 header{
     height: 100px;
     background: #faf8f8;
@@ -449,9 +440,77 @@ form textarea::placeholder{
     width: 40px;
 }*/
 
+.contenido-footer
+{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.contenido-footer div{
+    flex:1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+footer 
+{ 
+  width:100%; 
+  background-color:#263238; 
+  min-height:250px; 
+  padding:10px 0px 25px 0px ;}
+  
+footer p 
+{ 
+  font-size:13px; 
+  color:#CCC; 
+  padding-bottom:0px; 
+  margin-bottom:8px;}
+
+
+.mb10 { 
+  padding-bottom:15px;
+}
+
+.contenido-footer div i{
+    color:#28B0AB;
+}
+.contenido-footer div h6{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+
+}
+.contenido-footer div p{
+    color : rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+}
+.contenido-footer div{
+  border:none;
+}
+
+.contenido-footer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-content: space-around;
+  height: 100%;
+  /* overflow-x: scroll; */
+  /* overscroll-behavior-x: contain; */
+  /* scroll-snap-type: x proximity; */
+  padding: 0px;
+}
+
+#site-footer
+{
+  padding: 0px 50px;
+}
 .site-footer
 {
-  background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -460,21 +519,31 @@ form textarea::placeholder{
 .site-footer hr
 {
   border-top-color:#bbb;
-  opacity:0.5
+  opacity:0.5;
 }
 .site-footer hr.small
 {
   margin:20px 0
 }
-.site-footer h6
+.site-footer h5
 {
   color:#fff;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  margin-left:10px;
-  letter-spacing:2px
+  margin-left: 10px;
+  letter-spacing:1px;
+  text-align: center;
 }
+
+.footer_ul_amrc 
+{ 
+  margin:0px ; 
+  list-style-type:none ; 
+  font-size:14px; 
+  padding:0px 0px 10px 0px ; 
+}
+
 .site-footer a
 {
   color:#737373;
@@ -522,7 +591,9 @@ form textarea::placeholder{
 }
 .copyright-text
 {
-  margin:0
+  text-align: center;
+  margin:0; 
+  padding: 10px;
 }
 
 @media (max-width:991px)
@@ -548,6 +619,7 @@ form textarea::placeholder{
 
 .marca
 {
+ text-align: center;
  padding-left: 10px;
 }
 .social-icons li
