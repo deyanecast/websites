@@ -744,11 +744,11 @@ footer p
 
     #enlaces
     {
-      display: none;
+      display: block;
     }
     #sabermasdiv
     {
-      display: none;
+      display: block;
     }
 
     #site-footer
