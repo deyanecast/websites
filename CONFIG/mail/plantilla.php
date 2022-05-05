@@ -1,10 +1,9 @@
 <?php
 
 
-function mail_constructor($title,$message){
-    $title = "prueba";
-    $message = "esto es una prueba";
-	return $salida = '
+function mail_constructor($nombre,$mail,$mensaje){
+	$title = "NUEVO MENSAJE DESDE EL SITIO WEB";
+ 	return $salida = '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +27,7 @@ function mail_constructor($title,$message){
 			<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
 				<tr>		
 					<td align="center" bgcolor="#F9F9F9" style="padding: 10px 0 10px 0; border: 1px solid transparent;border-radius: 4px;border-color: #EDEDED;">
-						<img src="../../assets.1.2.1/img/logo.png" width="30%">
+						<img src="fectumgroup.com/assets.1.2.1/img/logo.png" width="30%">
 					</td>
 				</tr>
 				<tr>		

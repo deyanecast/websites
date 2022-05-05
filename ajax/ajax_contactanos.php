@@ -7,6 +7,8 @@ header("Cache: no-cahce");
 ini_set('max_execution_time', 90000);
 ini_set("memory_limit", -1);
 
+include_once('../CONFIG/mail/plantilla.php');
+
 $request = $_REQUEST["request"]; 
 switch($request){
 	case "grabar":
@@ -29,6 +31,12 @@ switch($request){
 
 function EnviarCorreo($nombre,$mail,$mensaje)
 {
+    $to = "arroyoalejandra97@gmail.com";
+    $subject = "Prueba Fectum";
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $message = mail_constructor($nombre,$mail,$mensaje);
+    mail($to, $subject, $message, $headers);
     $enviar = 1;
     if($enviar == 1)
     {
