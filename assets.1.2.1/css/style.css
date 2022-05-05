@@ -185,8 +185,8 @@ header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-
 }
+
 .contenido-iconos div{
     flex:1;
     margin: 20px 0px;
@@ -313,6 +313,7 @@ form textarea::placeholder{
     /* overscroll-behavior-x: contain; */
     /* scroll-snap-type: x proximity; */
     padding: 0px;
+    flex-wrap: wrap;
 }
 .iframe__container {
     flex: 1;
@@ -496,6 +497,7 @@ footer p
 }
 .contenido-footer div{
   border:none;
+  padding: 5px;
 }
 
 .contenido-footer {
@@ -505,10 +507,8 @@ footer p
   text-align: center;
   align-content: space-around;
   height: 100%;
-  /* overflow-x: scroll; */
-  /* overscroll-behavior-x: contain; */
-  /* scroll-snap-type: x proximity; */
   padding: 0px;
+  flex-wrap: wrap;
 }
 
 #site-footer
