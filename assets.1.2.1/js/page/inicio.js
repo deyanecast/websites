@@ -23,7 +23,7 @@ function EnviarMensaje(){
     nombre = document.getElementById('nombre');
     email = document.getElementById('email');
     mensaje = document.getElementById('mensaje');
-    if(nombre.value !== "" && mensaje.value !== ""){
+    if(nombre.value !== "" && mensaje.value !== "" && email.value !== ""){
         /////////// POST /////////
      
         var http = new FormData();
