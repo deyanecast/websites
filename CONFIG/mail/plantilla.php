@@ -2,7 +2,7 @@
 
 
 function mail_constructor($nombre,$mail,$mensaje){
-	$title = "NUEVO MENSAJE DESDE EL SITIO WEB";
+	$title = 'Nuevo mensaje de : '.$nombre.'('.$mail.')';
  	return $salida = '
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,7 @@ function mail_constructor($nombre,$mail,$mensaje){
 				</tr>
 				<tr>		
 					<td align="center" bgcolor="#ffffff" style="padding: 10px 30px 10px 30px;">
+					
 						<h2>'.$title.'</h2>
 					</td>
 				</tr>
@@ -42,7 +43,7 @@ function mail_constructor($nombre,$mail,$mensaje){
 							<tr>
 								<td align="justify">
 									<hr>
-									<p>'.$message.'</p>
+									<p>'.$mensaje.'</p>
 								</td>
 							</tr>	
 						</table>
