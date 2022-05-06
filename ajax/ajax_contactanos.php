@@ -15,6 +15,7 @@ switch($request){
 		$nombre = $_REQUEST["nombre"];
         $mail = $_REQUEST["mail"];
         $mensaje = $_REQUEST["mensaje"];
+        $telefono = $_REQUEST["telefono"];
 		EnviarCorreo($nombre,$mail,$mensaje);
 		break;
         default:
