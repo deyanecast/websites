@@ -16,7 +16,7 @@ switch($request){
         $mail = $_REQUEST["mail"];
         $mensaje = $_REQUEST["mensaje"];
         $telefono = $_REQUEST["telefono"];
-		EnviarCorreo($nombre,$mail,$mensaje);
+		EnviarCorreo($nombre,$mail,$mensaje,$telefono);
 		break;
         default:
 		$arr_respuesta = array(
@@ -30,7 +30,7 @@ switch($request){
 			
 
 
-function EnviarCorreo($nombre,$mail,$mensaje)
+function EnviarCorreo($nombre,$mail,$mensaje,$telefono)
 {
     $to = "arroyoalejandra97@gmail.com,deyanecast@gmail.com";
     $subject = "Fectum Group: Nuevo mensaje";
