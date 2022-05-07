@@ -10,7 +10,6 @@
     <title>FECTUM GROUP</title>
     <link rel="icon" href="assets.1.2.1/img/logo.png">
     <link rel="stylesheet" href="assets.1.2.1/css/style.css">
-  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/...">
     <script src="https://kit.fontawesome.com/f49ecf94c5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
@@ -24,9 +23,9 @@
         &#8801
     </label>
     <nav class="menu" id="menu">
-        <a href="index.html" >Inicio</a>
+        <a href="" >Inicio</a>
         <a href="about.html" >Sobre Nosotros</a>
-        <a href="services.html" >Nuestros Servicios</a>
+        <a href="#contacto" id="a3">Nuestros Servicios</a>  
         <label for="check" class="esconder-menu">
             &#215
         </label>
@@ -37,35 +36,136 @@
         <div class="contenido-banner">
             <h3>
                 <span>FECTUM</span>
-                group <br> 
+                group <br> P&aacute;gina en Construci&oacute;n
             </h3>
+        <a href="#contacto" id="a4" class="boton-empezar"><i class="fa-solid fa-star"></i> Empezar</a>
         </div>
     </section>
     <br><br>
     <div class="texto-servicios">
-       <h2>Nuestros Servicios</h2>
+       <h2><i class="fa-solid fa-hammer"></i> Nuestros Servicios</h2>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolores vel. Repellat vel porro sit, distinctio non dolor animi deleniti aliquid  esse, rem delectus suscipit?</p>
+   <div class="principal">
+    <div class="containerprin">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="services.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                    <h3>Code</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="services.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                    <h3>Launch</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="services.html">Read More</a>
+                </div>
+            </div>
+        </div>
     </div>
- 
-   <br><br><br>
+
+</div>
+
+   <section id="iconos">
+    <div class="contenido-iconos">
+        <div>
+            <i class="fa-solid fa-sun fa-3x"></i>
+            <h6>Mision</h6>
+            <p>Materializar los sueños y proyectos de nuestros clientes en obras de infraestructura respaldados por un equipo de profesionales, teniendo la certeza que trabajamos cada día comprometidos con la calidad, excelencia y desarrollo del país de una forma sostenible y amigable con el medio ambiente.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-eye fa-3x"></i>
+            <h6>Visi&oacute;n</h6>
+            <p>Ser un grupo líder en la industria de la construcción, que genere infraestructura para el desarrollo del país, destacándose por la excelencia ofrecida a nuestros clientes y comprometidos con nuestros colaboradores y su desarrollo profesional y personal.</p>
+        </div>
+        <div id="icono-movil">
+            <i class="fa-solid fa-medal fa-3x"></i>
+            <h6>V&aacute;lores</h6>
+            <p> Excelencia y pasión en el trabajo. <br>
+                Compromiso y empatía con nuestros colaboradores. <br>
+                Confianza y credibilidad para nuestros clientes. <br>
+                Calidad y profesionalismo en nuestros procesos constructivos. 
+                Respeto y sostenibilidad con el medio ambiente
+            </p>
+        </div>
+        
+    </div>
+    <div class="boton-iconos">
+        <a   class="boton-saber-mas"><i class="fa-solid fa-angles-right"></i> Saber m&aacute;s</a>
+    </div>
+   </section>
    
+   <section id="contacto">
+    <form >
+       <h4><i class="fa-solid fa-envelopes-bulk"></i> Cont&aacute;ctanos</i></h4>
+                 <div class="datos-form">
+               <div class="nombre">
+                   <label for="nombre">Nombre:</label>
+                   <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+               </div>
+               <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="nombre">
+                <label for="nombre">T&eacute;lefono: </label>
+                <input type="number" name="telefono" id="telefono"  placeholder="T&eacute;lefono">
+            </div>
+           </div>
+        
+           <div class="mensaje">
+               <label for="mensaje">Mensaje:</label>
+               <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+           </div>
+          
+        
+           <div class="boton-formulario">
+                <a  class="boton-saber-mas"  onclick="Enviar();"><i class="fa fa-send"></i> Enviar Mensaje</a>
+           </div>
+        </form>
+   </section>
     <footer class="site-footer">
         <section id="site-footer">
             <div class="contenido-footer">
                 <div>
                     <h5>Encuentranos</h5>
-                    <p class="mb10">Lorem Ipsum is sever since the 1500s</p>
-                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-                    <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
-                    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+                    <br>
+                    <p><i class="fa fa-location-arrow"></i> Ciudad de Guatemala </p>
+                    <p><i class="fa fa-phone"></i>  +502 34604251  </p>
+                    <p><i class="fa fa fa-envelope"></i> info@fectumgroup.com  </p>
                 </div>
                 <div id="enlaces">
                     <h5>Enlaces Rápidos</h5>
                     <ul class="footer_ul_amrc">
-                    <li><a href="http://webenlance.com">Image Rectoucing</a></li>
-                    <li><a href="http://webenlance.com">Clipping Path</a></li>
+                    <li><a href="http://webenlance.com">gerenteplanificacion@fectumgroup.com</a></li>
+                    <li><a href="http://webenlance.com">info@fectumgroup.com</a></li>
                     <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
                     <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
                     <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
@@ -87,7 +187,7 @@
                 
             </div>
             <div class="boton-iconos">
-                <a href="#menu" id="regresar" class="boton-saber-mas">Regresar al Inicio</a>
+                <a href="#menu" id="regresar" class="boton-saber-mas"><i class="fa-solid fa-flag-checkered"></i> Regresar al Inicio</a>
             </div>
            </section>
         <div class="container">
